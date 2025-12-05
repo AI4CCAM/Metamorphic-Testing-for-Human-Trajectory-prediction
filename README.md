@@ -35,6 +35,20 @@ This will produce three files:
 - `results_map.tex` (Table 4 from the paper)
 - `scores_trajectory.pdf` (Figure 5 from the paper)
 
+## Citation
+
+If you find our metamorphic testing useful, please cite
+  ```
+@article{spieker2025metamorphic,
+  title={Metamorphic Testing of Multimodal Human Trajectory Prediction},
+  author={Spieker, Helge and Lazaar, Nadjib and Gotlieb, Arnaud and Belmecheri, Nassim},
+  journal={Information and Software Technology},
+  year={2025},
+  publisher={Elsevier}
+}
+  ```
+
+If you find YNet useful, please cite the papers referenced below.
 
 # Y-net README
 
