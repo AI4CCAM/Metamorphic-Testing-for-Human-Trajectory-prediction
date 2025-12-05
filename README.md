@@ -2,6 +2,17 @@
 
 (Please find the original Y-net README below and the [original repository here](https://github.com/HarshayuGirase/Human-Path-Prediction/tree/master/ynet)).
 
+This repository contains the source code for the experiments of the paper [Metamorphic Testing of Multimodal Human Trajectory Prediction](https://arxiv.org/abs/2509.01294) (published in Information and Software Technology).
+The presented metamorphic testing methodology was developed during the [AI4CCAM project](https://www.ai4ccam.eu/).
+
+**Context**: Predicting human trajectories is crucial for the safety and reliability of autonomous systems, such as automated vehicles and mobile robots. However, rigorously testing the underlying multimodal Human Trajectory Prediction (HTP) models, which typically use multiple input sources (e.g., trajectory history and environment maps) and produce stochastic outputs (multiple possible future paths), presents significant challenges. The primary difficulty lies in the absence of a definitive test oracle, as numerous future trajectories might be plausible for any given scenario. 
+
+**Objectives**: This research presents the application of Metamorphic Testing (MT) as a systematic methodology for testing multimodal HTP systems. We address the oracle problem through metamorphic relations (MRs) adapted for the complexities and stochastic nature of HTP. 
+
+**Methods**: We present five MRs, targeting transformations of both historical trajectory data and semantic segmentation maps used as an environmental context. These MRs encompass: 1) label-preserving geometric transformations (mirroring, rotation, rescaling) applied to both trajectory and map inputs, where outputs are expected to transform correspondingly. 2) Map-altering transformations (changing semantic class labels, introducing obstacles) with predictable changes in trajectory distributions. We propose probabilistic violation criteria based on distance metrics between probability distributions, such as the Wasserstein or Hellinger distance. 
+
+**Conclusion**: This study introduces tool, a MT framework for the oracle-less testing of multimodal, stochastic HTP systems. It allows for assessment of model robustness against input transformations and contextual changes without reliance on ground-truth trajectories. 
+
 ## Data
 Please download the data from this drive (copy and paste all the folders in the main repo) [https://drive.google.com/drive/folders/1j4C8zy0ZxYF8d2z-pSMaBY71lzXMSviQ?usp=drive_link]
 ## Installation
